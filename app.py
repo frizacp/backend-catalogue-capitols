@@ -10,8 +10,8 @@ app.config.from_object('config.Config')
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 # AMBIL DATA DARI FILE CONFIG
-DB_CONFIG2 = app.config['DB_CONFIG']
-DB_CONFIG = app.config['DB_CONFIG_DEV']
+DB_CONFIG = app.config['DB_CONFIG']
+DB_CONFIG2 = app.config['DB_CONFIG_DEV']
 PW_LIST = app.config['PW_DATA']
 
 @app.route('/login', methods=['POST'])
